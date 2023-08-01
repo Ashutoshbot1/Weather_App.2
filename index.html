@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input class="inpCity" type="text" placeholder="Enter City Name Here..." spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="warning-box">
+            <span>ERROR:</span>
+            <p>not found kniosacinodnc knscnsncs klnmscmnsc jkabascbbdibc</p>
+        </div>
+        <div class="weather">
+            <!-- <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15km/hr</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
